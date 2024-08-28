@@ -35,7 +35,37 @@ import { FaJava } from "react-icons/fa";
 import { SiJira } from "react-icons/si";
 import { FaConfluence } from "react-icons/fa";
 import { SiVisualstudiocode } from "react-icons/si";
+import { SiSpringboot } from "react-icons/si";
 
+export const navBardetails=[
+  {
+  title:"About",
+  linkto:"about"
+ },
+ {
+  title:"Work Experience",
+  linkto:"experience"
+ },
+ {
+  title:"Skills",
+  linkto:"skills"
+ },
+ {
+  title:"Certification",
+  linkto:"certification"
+ },
+//  {
+//   title:"Projects",
+//   linkto:"projects"
+//  },
+ {
+  title:"Contact",
+  linkto:"contact"
+ },
+];
+export const navBarTitle={
+  title:"Muruvazhakan P"
+}
 export const myDetails=[
     {
     title: "Frontend Developer",
@@ -66,8 +96,8 @@ export const myDetails=[
 ];
 
 export const myIntr={
-  "title":"Hi, Iam Muruvazhakan Pugazhendhi",
-  "desc":"Iam a Full stack developer with 5+ years of experience in building responsive and interactive web applications. My skills include React.js, JavaScript Core, Node.js, MySQL, AWS and a few other web technologies."
+  "title":"Hi, I am Muruvazhakan Pugazhendhi",
+  "desc":"A Full stack developer with 5+ years of experience in building responsive and interactive web applications. My skills include React.js, JavaScript Core, Node.js, MySQL, AWS and a few other web technologies."
 };
 export const skills = [
   {
@@ -146,6 +176,12 @@ export const skills = [
         "title": "VS code",
         // "imageSrc": mongodb,
         icon:SiVisualstudiocode,
+        size:40
+      },
+      {
+        "title": "Springboot",
+        // "imageSrc": mongodb,
+        icon:SiSpringboot,
         size:40
       },
 ]

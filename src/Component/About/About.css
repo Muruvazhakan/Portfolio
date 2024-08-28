@@ -80,8 +80,7 @@
       /* background-color: transparent; */
       padding-left: 0;
       padding-right: 0;
-      padding: 40px;
-    margin-top: 30px;
+      padding: 10px 40px 10px 40px;
     }
   
     .content {
@@ -111,8 +110,8 @@
     }
 
     .aboutItem h3 {
-      font-size: 13px;
-      font-weight: 450;
+      font-size: 20px;
+      /* font-weight: 450; */
     }
     
     .aboutItem p {
@@ -121,3 +120,13 @@
 
   }
   
+  @media screen and (max-width: 630px) {
+    .aboutItem h3 {
+      font-size: 16px;
+      /* font-weight: 450; */
+    }
+    
+    .aboutItem p {
+      font-size: 11px;
+    }
+  }

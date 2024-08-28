@@ -6,7 +6,7 @@ const Experience = () => {
 
     return (
         <section id="experience" className="container-experience">
-            <h2 className="title-experience">Experience</h2>
+            <h2 className="title-experience">Work Experience</h2>
             <div className="content-experience">
                 <ul className="projectdetails">
                     {projectdetails.map((projectdetail, id) => {

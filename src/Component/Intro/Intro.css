@@ -9,8 +9,8 @@
     z-index: 1;
 }
 .myImg{
-    width: 30%;
-    height: 30%;
+    width: 25%;
+    height: 25%;
     z-index: 1;
     border-radius: 50%;
     animation-name: floating;
@@ -27,7 +27,7 @@
     z-index: 1;
 }
 .title-Intro{
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 800;
     margin-bottom: 25px;
     font-family: var(--font-open);
@@ -41,7 +41,7 @@
 }
 
 .description{
-    font-size: 22px;
+    font-size: 20px;
     font-family: var(--font-open);
     margin-bottom: 25px;
 }
@@ -73,12 +73,12 @@
 
 .topBlur{
     position: absolute;
-    width: 50vw;
-    height: 50vw;
+    width: 80vw;
+    height: 40vw;
     min-width: 350px;
     min-height: 350px;
     top:-128px;
-    left: -10vw;
+    left: 10vw;
     border-radius: 770px;
     background: rgba(25, 55, 109, 0.7);
     filter: blur(100px);
@@ -92,7 +92,7 @@
     min-width: 350px;
     min-height: 250px;
     top:246px;
-    left: -25vw;
+    left: 5vw;
     border-radius: 770px;
     background: rgba(25, 55, 109, 0.7);
     filter: blur(100px);
@@ -115,5 +115,12 @@
     .description{
         font-size: 15px;
         margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:830px) {
+    .myImg{
+        width: 45%;
+        height: 45%;
     }
 }
