@@ -1,0 +1,123 @@
+@import "../../index.css";
+
+  .container-expertise {
+    position: relative;
+    background-color: rgba(12, 12, 12, 0.6);
+    border-radius: 15px;
+    padding: 25px;
+    margin-top: 20px;
+    z-index: 1;
+    /* margin-left: 10%; */
+    margin-right: 10%;
+}
+  .abouticon{
+    /* size: 50%; */
+    margin-right: 3%;
+  }
+  .title-expertise {
+    color: var(--color-text);
+    letter-spacing: 1.75px;
+    text-transform: uppercase;
+     display: flex ;
+     text-align: center;
+     align-items: center;
+     font-size: 25px;
+     font-weight: 700;
+     padding-bottom: 20px;
+  }
+  
+  .content-expertise {
+    /* display: flex;
+    flex-direction: row;
+    align-items: center; */
+  }
+  
+  .aboutImage {
+    width: 35%;
+  }
+  
+  .aboutItems {
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+  .aboutItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 20px;
+    list-style: none;
+    text-decoration: none;
+    color: var(--color-text);
+    padding: 20px;
+    background-image: linear-gradient(
+      90deg,
+      rgba(165, 215, 232, 0.42) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: 0.4s;
+  }
+  
+  .aboutItem:hover {
+    background-size: 100% 100%;
+  }
+  
+  .aboutItem h3 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  
+  .aboutItem p {
+    font-size: 18px;
+  }
+  
+  @media screen and (max-width: 830px) {
+    .container-expertise {
+      /* background-color: transparent; */
+      padding-left: 0;
+      padding-right: 0;
+      padding: 40px;
+    margin-top: 30px;
+    }
+  
+    .content {
+      flex-direction: column;
+    }
+  
+    .aboutImage {
+      display: none;
+     
+    }
+  
+    .aboutItems {
+      margin-top: 10px;
+      gap:0
+    }
+  
+    .aboutItem {
+      padding-left: 0;
+      padding-right: 0;
+      gap:5px
+    }
+
+    .title-expertise {
+       font-size: 20px;
+       font-weight: 500;
+       padding-bottom: 10px;
+    }
+
+    .aboutItem h3 {
+      font-size: 13px;
+      font-weight: 450;
+    }
+    
+    .aboutItem p {
+      font-size: 14px;
+    }
+
+  }
+  

@@ -1,0 +1,119 @@
+@import "../../index.css";
+
+.container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 49px 10% 0 10%;
+    z-index: 1;
+}
+.myImg{
+    width: 30%;
+    height: 30%;
+    z-index: 1;
+    border-radius: 50%;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--color-text);
+    z-index: 1;
+}
+.title-Intro{
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    font-family: var(--font-open);
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 1) 70%,
+        rgba(255, 255, 255, 0) 120%
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.description{
+    font-size: 22px;
+    font-family: var(--font-open);
+    margin-bottom: 25px;
+}
+
+.contactBtn {
+    text-decoration: none;
+    background-color: rgb(0, 0, 0);
+    color: var(--color-text);
+    border-radius: 100px;
+    font-size: 15px ;
+    font-weight: 400;
+    padding: 10px 25px;
+    box-shadow: 0 0 4px 0  rgba(0, 0, 0, 0.25);
+}
+
+
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+      }
+      50% {
+        transform: translate(0, 10px);
+      }
+      100% {
+        transform: translate(0, -0px);
+      }
+}
+
+.topBlur{
+    position: absolute;
+    width: 50vw;
+    height: 50vw;
+    min-width: 350px;
+    min-height: 350px;
+    top:-128px;
+    left: -10vw;
+    border-radius: 770px;
+    background: rgba(25, 55, 109, 0.7);
+    filter: blur(100px);
+    z-index: 0;
+}
+
+.bottomBlur{
+    position: absolute;
+    width: 70vw;
+    height: 50vw;
+    min-width: 350px;
+    min-height: 250px;
+    top:246px;
+    left: -25vw;
+    border-radius: 770px;
+    background: rgba(25, 55, 109, 0.7);
+    filter: blur(100px);
+    z-index: 0;
+}
+
+
+@media screen and (max-width:800px){
+    .container{
+        flex-direction: column-reverse;
+    }
+    .content{
+        align-items: center;
+    }
+    .title-Intro {
+        font-size: 25px;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+    .description{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+}
