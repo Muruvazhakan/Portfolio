@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { FloatingWhatsApp } from 'react-floating-whatsapp';
 import { AnimatePresence } from "framer-motion";
@@ -10,7 +9,6 @@ import Experience from './Component/Experience/Experience';
 import Contact from './Component/Contact/Contact';
 import Certification from './Component/Certification/Certification';
 import photo from "./assets/Myphoto/Photo.jpg";
-import Project from './Component/Project/Project';
 
 function App() {
   return (
