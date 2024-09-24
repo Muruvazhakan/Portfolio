@@ -97,13 +97,18 @@ export const myDetails=[
 
 export const myIntr={
   "title":"Hi, I am Muruvazhakan Pugazhendhi",
-  "desc":"A Full stack developer with 5+ years of experience in building responsive and interactive web applications. My skills include React.js, JavaScript Core, Node.js, MySQL, AWS and a few other web technologies."
+  "desc":"A Full stack developer with 5+ years of experience in building responsive and interactive web applications. My skills include Java, React.js, JavaScript Core, Node.js, MySQL, AWS and a few other web technologies."
 };
 export const skills = [
   {
     "title": "React.js",
     // "imageSrc": react,
     icon:FaReact,
+    size:40
+  }, {
+    "title": "Java",
+    // "imageSrc": mongodb,
+    icon:FaJava,
     size:40
   },
   {
@@ -148,12 +153,7 @@ export const skills = [
         icon:SiMongodb,
         size:40
       },
-      {
-        "title": "Java",
-        // "imageSrc": mongodb,
-        icon:FaJava,
-        size:40
-      },
+     
       {
         "title": "Github",
         // "imageSrc": mongodb,
@@ -194,7 +194,8 @@ export const projectdetails = [
           "startDate": "Mar, 2022",
           "endDate": "Present (Helsinki, Finland)",
           "experiences": ["Developed a responsive Issuer access web application using React and served by thousands of Issuer agents on a daily basis.",
-             "Worked closely with Clients, other teams to identify new business requirements and developed UI.",
+            "Built RESTful APIs and integrated with front-end applications for Issuer access web using Spring boot.",
+             "Worked closely with Clients, other teams to identify new business requirements",
              "Mentored junior developers and conducted code reviews to uphold coding standards and functional expectations.",
              "Adept at automating cloud infrastructure deployment through Infrastructure as Code via AWS Cloud Formation."],
         },
@@ -205,9 +206,11 @@ export const projectdetails = [
           "startDate": "May, 2019",
           "endDate": "Mar, 2022 (Chennai, India)",
           "experiences": [
-            "Developed Digital Market portal UI design using React, Java script and back-end components using technologies such Node.js,express.",
-            "Worked in Complex vendor queries, state management and state based UI control for the Clearing house of Finance market.",
-            "Applied Agile methodologies to improve project efficiency and collaboration.",
+            "Developed Digital Market portal API using Java Spring boot and later developed UI with React, Java script and participated in microservices architecture.",
+            "In Clearing House implementation, developed and deployed scalable, fault-tolerant microservices using Spring Boot and AWS environment also worked in Complex vendor queries, state management and state based UI control.",
+           "Applied Agile methodologies to improve project efficiency and collaboration.", 
+           "Worked with Spring Data JPA and Hibernate for data persistence and ORM. Developed and optimized complex MySQL queries to meet business requirements and improve performance.",
+            
             "Collaborate with cross-functional teams with UX/UI designers to create intuitive, develop, and implement software solutions.",
             "Build in React components with multiple platforms and Redux storage, API, REST, JSON,CSS."
           ],
