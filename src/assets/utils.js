@@ -97,7 +97,7 @@ export const myDetails=[
 
 export const myIntr={
   "title":"Hi, I am Muruvazhakan Pugazhendhi",
-  "desc":"A Full stack developer with 5+ years of experience in building responsive and interactive web applications. My skills include Java, Springboot, React.js, JavaScript, MySQL, AWS and a few other web technologies."
+  "desc":"A Full stack developer with 5.5+ years of experience in building responsive and interactive web applications. My skills include Java, Springboot, React.js, JavaScript, MySQL, AWS and a few other web technologies."
 };
 export const skills = [
   {
@@ -188,17 +188,25 @@ export const skills = [
 ]
 
 export const projectdetails = [
-    
+    {
+      "role": "Team Lead",
+      "organisation": "Tata Consultancy Services",
+      "startDate": "NOV, 2024",
+      "endDate": "Present (Chennai, India)",
+      "experiences": [ "Worked with Spring Data JPA and Hibernate for data persistence and ORM. Developed and optimized complex MySQL queries to meet business requirements and improve performance.",
+        "Mentored junior developers and conducted code reviews to uphold coding standards and functional expectations.",
+         ],
+    },   
         {
           "role": "IT Analyst",
           "organisation": "Tata Consultancy Services",
           "startDate": "Mar, 2022",
-          "endDate": "Present (Helsinki, Finland)",
+          "endDate": "NOV, 2024  (Helsinki, Finland)",
           "experiences": ["Developed a responsive Issuer access web application using React and served by thousands of Issuer agents on a daily basis.",
             "Built RESTful APIs and integrated with front-end applications for Issuer access web using Spring boot.",
-             "Worked closely with Clients, other teams to identify new business requirements",
-             "Mentored junior developers and conducted code reviews to uphold coding standards and functional expectations.",
-             "Adept at automating cloud infrastructure deployment through Infrastructure as Code via AWS Cloud Formation."],
+             "Worked closely with Clients to identify new business requirements and developed UI and also fixed other API bugs to improve the overall stability, user experience and resolve business-related queries.",
+             "Adept at automating cloud infrastructure deployment through Infrastructure as Code via AWS Cloud Formation",
+             "Experience in CI/CD pipeline, enhancing productivity and reducing time-to-market"],
         },
        
         {          
@@ -209,11 +217,9 @@ export const projectdetails = [
           "experiences": [
             "Developed Digital Market portal API using Java Spring boot and later developed UI with React, Java script and participated in microservices architecture.",
             "In Clearing House implementation, developed and deployed scalable, fault-tolerant microservices using Spring Boot and AWS environment also worked in Complex vendor queries, state management and state based UI control.",
-           "Applied Agile methodologies to improve project efficiency and collaboration.", 
-           "Worked with Spring Data JPA and Hibernate for data persistence and ORM. Developed and optimized complex MySQL queries to meet business requirements and improve performance.",
-            
+           "Applied Agile methodologies to improve project efficiency and collaboration.",   
             "Collaborate with cross-functional teams with UX/UI designers to create intuitive, develop, and implement software solutions.",
-            "Build in React components with multiple platforms and Redux storage, API, REST, JSON,CSS."
+            "Troubleshooting and debugging applications, resolving bugs and performance issues to enhance overall system stability and user experience"
           ],
         }
         
