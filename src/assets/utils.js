@@ -97,18 +97,24 @@ export const myDetails=[
 
 export const myIntr={
   "title":"Hi, I am Muruvazhakan Pugazhendhi",
-  "desc":"A Full stack developer with 5+ years of experience in building responsive and interactive web applications. My skills include Java, React.js, JavaScript Core, Node.js, MySQL, AWS and a few other web technologies."
+  "desc":"A Full stack developer with 5+ years of experience in building responsive and interactive web applications. My skills include Java, Springboot, React.js, JavaScript, MySQL, AWS and a few other web technologies."
 };
 export const skills = [
   {
-    "title": "React.js",
-    // "imageSrc": react,
-    icon:FaReact,
+    "title": "Springboot",
+    // "imageSrc": mongodb,
+    icon:SiSpringboot,
     size:40
-  }, {
+  },
+   {
     "title": "Java",
     // "imageSrc": mongodb,
     icon:FaJava,
+    size:40
+  },{
+    "title": "React.js",
+    // "imageSrc": react,
+    icon:FaReact,
     size:40
   },
   {
@@ -178,12 +184,7 @@ export const skills = [
         icon:SiVisualstudiocode,
         size:40
       },
-      {
-        "title": "Springboot",
-        // "imageSrc": mongodb,
-        icon:SiSpringboot,
-        size:40
-      },
+      
 ]
 
 export const projectdetails = [
