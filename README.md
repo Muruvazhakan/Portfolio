@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# MuruPortfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Personal portfolio built with React. It displays an introduction, about section, work experience, certifications and contact links.
 
-## Available Scripts
+## Quick start
 
-In the project directory, you can run:
+1. Install dependencies:
 
-### `npm start`
+```sh
+npm install
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Run locally:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```sh
+npm start
+```
 
-### `npm test`
+Build for production:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```sh
+npm run build
+```
 
-### `npm run build`
+See scripts in [package.json](package.json).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Project entry points
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- App root: [src/index.js](src/index.js)
+- Main app component: [src/App.js](src/App.js)
+- Static HTML template: [public/index.html](public/index.html)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Main components
 
-### `npm run eject`
+- Navbar: [src/Component/Routes/Navbar/Navbar.js](src/Component/Routes/Navbar/Navbar.js) (`Navbar`)
+- Intro: [src/Component/Intro/Intro.js](src/Component/Intro/Intro.js) (`Intro`)
+- About: [src/Component/About/About.js](src/Component/About/About.js) (`About`)
+- Experience: [src/Component/Experience/Experience.js](src/Component/Experience/Experience.js) (`Experience`)
+- Certification: [src/Component/Certification/Certification.js](src/Component/Certification/Certification.js) (`Certification`)
+- Contact: [src/Component/Contact/Contact.js](src/Component/Contact/Contact.js) (`Contact`)
+- Contact list subcomponent: [src/Component/Contact/Contactme/Contactme.js](src/Component/Contact/Contactme/Contactme.js) (`Contactme`)
+- (Optional) Project placeholder: [src/Component/Project/Project.js](src/Component/Project/Project.js) (`Project`)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Styling
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Global styles: [src/index.css](src/index.css) and [src/App.css](src/App.css). Component CSS lives next to components (for example [src/Component/Intro/Intro.css](src/Component/Intro/Intro.css)).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Data & icons
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+All shared data and icons live in the utils module:
 
-## Learn More
+- Data and exports: [src/assets/utils.js](src/assets/utils.js)
+  - [`utils.navBardetails`](src/assets/utils.js) — navbar items
+  - [`utils.navBarTitle`](src/assets/utils.js) — site title
+  - [`utils.myIntr`](src/assets/utils.js) — intro text
+  - [`utils.myDetails`](src/assets/utils.js) — about cards
+  - [`utils.skills`](src/assets/utils.js) — skills list and icons
+  - [`utils.projectdetails`](src/assets/utils.js) — work experience entries
+  - [`utils.myCertifications`](src/assets/utils.js) — certifications
+  - [`utils.contact`](src/assets/utils.js) — contact links and icons
+  - [`utils.contactme`](src/assets/utils.js) — contact section text
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Icons are provided via `react-icons` and referenced inside [src/assets/utils.js](src/assets/utils.js).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Tests & tooling
 
-### Code Splitting
+- Basic test: [src/App.test.js](src/App.test.js)
+- Jest DOM setup: [src/setupTests.js](src/setupTests.js)
+- Web vitals helper: [src/reportWebVitals.js](src/reportWebVitals.js)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Notes
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Fonts: project includes variable Open Sans via dependency `@fontsource-variable/open-sans` (see [src/index.js](src/index.js)).
+- WhatsApp floating chat is enabled in [src/App.js](src/App.js) via `react-floating-whatsapp`.
+- Build output is placed in `build/` (ignored in .gitignore).

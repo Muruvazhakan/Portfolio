@@ -1,7 +1,5 @@
-
-import React from 'react';
+import React from "react";
 // export const imgurl="";
-
 
 import { FaServer } from "react-icons/fa";
 import { BsFillCloudCheckFill } from "react-icons/bs";
@@ -36,260 +34,282 @@ import { SiJira } from "react-icons/si";
 import { FaConfluence } from "react-icons/fa";
 import { SiVisualstudiocode } from "react-icons/si";
 import { SiSpringboot } from "react-icons/si";
+import { FaGolang } from "react-icons/fa6";
 
-export const navBardetails=[
+export const navBardetails = [
   {
-  title:"About",
-  linkto:"about"
- },
- {
-  title:"Work Experience",
-  linkto:"experience"
- },
- {
-  title:"Skills",
-  linkto:"skills"
- },
- {
-  title:"Certification",
-  linkto:"certification"
- },
-//  {
-//   title:"Projects",
-//   linkto:"projects"
-//  },
- {
-  title:"Contact",
-  linkto:"contact"
- },
+    title: "About",
+    linkto: "about",
+  },
+  {
+    title: "Work Experience",
+    linkto: "experience",
+  },
+  {
+    title: "Skills",
+    linkto: "skills",
+  },
+  {
+    title: "Certification",
+    linkto: "certification",
+  },
+  //  {
+  //   title:"Projects",
+  //   linkto:"projects"
+  //  },
+  {
+    title: "Contact",
+    linkto: "contact",
+  },
 ];
-export const navBarTitle={
-  title:"Muruvazhakan P"
-}
-export const myDetails=[
-    {
+export const navBarTitle = {
+  title: "Muruvazhakan P",
+};
+export const myDetails = [
+  {
     title: "Frontend Developer",
-    desc:"Detail-oriented Frontend Developer with expertise in JavaScript frameworks, cross-browser compatibility, and translating design wireframes into high-quality, interactive interfaces.",
+    desc: "Detail-oriented Frontend Developer with expertise in JavaScript frameworks, cross-browser compatibility, and translating design wireframes into high-quality, interactive interfaces.",
     //I'm a frontend developer with experience in building responsiveand optimized sites
     //
-    icon:RiCodeView,
-    },
-    {
-        title: "Backend Developer",
-        desc:" Backend Developer with a strong focus on building scalable APIs, optimizing server-side logic, and ensuring high-performance systems using modern frameworks and databases ",
-       //I have experience developing fast and optimised back-end systemsand APIs
-        icon:FaServer
-    },
-    {
-        title: "SQL Developer",
-        desc:"Proficient SQL Developer with expertise in database design, optimization, and complex query development, ensuring efficient data management and retrieval",
-        
-        icon:IoServer,
-    },
-    {
-      title: "Cloud Engineer",
-      desc:"Experienced Cloud Engineer specializing in scalable architecture, cost optimization, and multi-cloud solutions with a strong foundation in AWS and Azure",
-    
-      icon:BsFillCloudCheckFill
+    icon: RiCodeView,
   },
+  {
+    title: "Backend Developer",
+    desc: " Backend Developer with a strong focus on building scalable APIs, optimizing server-side logic, and ensuring high-performance systems using modern frameworks and databases ",
+    //I have experience developing fast and optimised back-end systemsand APIs
+    icon: FaServer,
+  },
+  {
+    title: "SQL Developer",
+    desc: "Proficient SQL Developer with expertise in database design, optimization, and complex query development, ensuring efficient data management and retrieval",
 
+    icon: IoServer,
+  },
+  {
+    title: "Cloud Engineer",
+    desc: "Experienced Cloud Engineer specializing in scalable architecture, cost optimization, and multi-cloud solutions with a strong foundation in AWS and Azure",
+
+    icon: BsFillCloudCheckFill,
+  },
 ];
 
-export const myIntr={
-  "title":"Hi, I am Muruvazhakan Pugazhendhi",
-  "desc":"A Full stack developer with 5.5+ years of experience in building responsive and interactive web applications. My skills include Java, Springboot, React.js, JavaScript, MySQL, AWS and a few other web technologies."
+const START_YEAR = 2019;
+const START_MONTH = 4; // May (0-based)
+const _now = new Date();
+const monthsDiff =
+  (_now.getFullYear() - START_YEAR) * 12 + (_now.getMonth() - START_MONTH);
+const experienceYears = Math.max(0, Math.round((monthsDiff / 12) * 10) / 10); // one decimal
+
+export const myIntr = {
+  title: "Hi, I am Muruvazhakan Pugazhendhi",
+  desc: `A Full stack developer with ${experienceYears} years of experience in building responsive and interactive web applications. My skills include GoLang, Java, Springboot, React.js, JavaScript, MySQL, AWS and a few other web technologies.`,
 };
 export const skills = [
   {
-    "title": "Springboot",
+    title: "GoLang",
     // "imageSrc": mongodb,
-    icon:SiSpringboot,
-    size:40
+    icon: FaGolang,
+    size: 40,
   },
-   {
-    "title": "Java",
+  {
+    title: "Springboot",
     // "imageSrc": mongodb,
-    icon:FaJava,
-    size:40
-  },{
-    "title": "React.js",
+    icon: SiSpringboot,
+    size: 40,
+  },
+  {
+    title: "Java",
+    // "imageSrc": mongodb,
+    icon: FaJava,
+    size: 40,
+  },
+  {
+    title: "React.js",
     // "imageSrc": react,
-    icon:FaReact,
-    size:40
+    icon: FaReact,
+    size: 40,
   },
   {
-    "title": "Node.js",
+    title: "Node.js",
     // "imageSrc": node,
-    icon:FaNodeJs,
-    size:40
+    icon: FaNodeJs,
+    size: 40,
   },
   {
-    "title": "MySql",
+    title: "MySql",
     // "imageSrc":graphql,
-    icon:GrMysql,
-    size:40
+    icon: GrMysql,
+    size: 40,
   },
   {
-    "title": "Java Script",
+    title: "Java Script",
     // "imageSrc": mongodb,
-    icon:IoLogoJavascript,
-    size:40
+    icon: IoLogoJavascript,
+    size: 40,
   },
   {
-        "title": "AWS",
-        // "imageSrc": html,
-    icon:FaAws,
-    size:40
-      },
-      {
-        "title": "HTML",
-        // "imageSrc":css,
-        icon:BsFiletypeHtml,
-        size:40
-      },
-      {
-        "title": "CSS",
-        // "imageSrc":css,
-        icon:FaCss3Alt,
-        size:40
-      },
-      {
-        "title": "MongoDB",
-        // "imageSrc": mongodb,
-        icon:SiMongodb,
-        size:40
-      },
-     
-      {
-        "title": "Github",
-        // "imageSrc": mongodb,
-        icon:RxGithubLogo,
-        size:40
-      },
-      {
-        "title": "Jira",
-        // "imageSrc": mongodb,
-        icon:SiJira,
-        size:40
-      },
-      {
-        "title": "Confluence",
-        // "imageSrc": mongodb,
-        icon:FaConfluence,
-        size:40
-      },
-      {
-        "title": "VS code",
-        // "imageSrc": mongodb,
-        icon:SiVisualstudiocode,
-        size:40
-      },
-      
-]
+    title: "AWS",
+    // "imageSrc": html,
+    icon: FaAws,
+    size: 40,
+  },
+  {
+    title: "HTML",
+    // "imageSrc":css,
+    icon: BsFiletypeHtml,
+    size: 40,
+  },
+  {
+    title: "CSS",
+    // "imageSrc":css,
+    icon: FaCss3Alt,
+    size: 40,
+  },
+  {
+    title: "MongoDB",
+    // "imageSrc": mongodb,
+    icon: SiMongodb,
+    size: 40,
+  },
 
-export const projectdetails = [
-    {
-      "role": "Team Lead",
-      "organisation": "Tata Consultancy Services",
-      "startDate": "NOV, 2024",
-      "endDate": "Present (Chennai, India)",
-      "experiences": [ "Worked with Spring Data JPA and Hibernate for data persistence and ORM. Developed and optimized complex MySQL queries to meet business requirements and improve performance.",
-        "Mentored junior developers and conducted code reviews to uphold coding standards and functional expectations.",
-         ],
-    },   
-        {
-          "role": "IT Analyst",
-          "organisation": "Tata Consultancy Services",
-          "startDate": "Mar, 2022",
-          "endDate": "NOV, 2024  (Helsinki, Finland)",
-          "experiences": ["Developed a responsive Issuer access web application using React and served by thousands of Issuer agents on a daily basis.",
-            "Built RESTful APIs and integrated with front-end applications for Issuer access web using Spring boot.",
-             "Worked closely with Clients to identify new business requirements and developed UI and also fixed other API bugs to improve the overall stability, user experience and resolve business-related queries.",
-             "Adept at automating cloud infrastructure deployment through Infrastructure as Code via AWS Cloud Formation",
-             "Experience in CI/CD pipeline, enhancing productivity and reducing time-to-market"],
-        },
-       
-        {          
-          "role": "Full Stack Developer",
-          "organisation": "Tata Consultancy Services",
-          "startDate": "May, 2019",
-          "endDate": "Mar, 2022 (Chennai, India)",
-          "experiences": [
-            "Developed Digital Market portal API using Java Spring boot and later developed UI with React, Java script and participated in microservices architecture.",
-            "In Clearing House implementation, developed and deployed scalable, fault-tolerant microservices using Spring Boot and AWS environment also worked in Complex vendor queries, state management and state based UI control.",
-           "Applied Agile methodologies to improve project efficiency and collaboration.",   
-            "Collaborate with cross-functional teams with UX/UI designers to create intuitive, develop, and implement software solutions.",
-            "Troubleshooting and debugging applications, resolving bugs and performance issues to enhance overall system stability and user experience"
-          ],
-        }
-        
+  {
+    title: "Github",
+    // "imageSrc": mongodb,
+    icon: RxGithubLogo,
+    size: 40,
+  },
+  {
+    title: "Jira",
+    // "imageSrc": mongodb,
+    icon: SiJira,
+    size: 40,
+  },
+  {
+    title: "Confluence",
+    // "imageSrc": mongodb,
+    icon: FaConfluence,
+    size: 40,
+  },
+  {
+    title: "VS code",
+    // "imageSrc": mongodb,
+    icon: SiVisualstudiocode,
+    size: 40,
+  },
 ];
 
+export const projectdetails = [
+  {
+    role: "Software Engineer 3",
+    organisation: "Comcast",
+    startDate: "May, 2025",
+    endDate: "Present (Chennai, India)",
+    experiences: [
+      "Working on Golang-based comcast product enhancements at Comcast.",
+      "Mentored junior developers and conducted code reviews to uphold coding standards and functional expectations.",
+    ],
+  },
+  {
+    role: "Team Lead",
+    organisation: "Tata Consultancy Services",
+    startDate: "NOV, 2024",
+    endDate: "May, 2025",
+    experiences: [
+      "Worked with Spring Data JPA and Hibernate for data persistence and ORM. Developed and optimized complex MySQL queries to meet business requirements and improve performance.",
+      "Experience in CI/CD pipeline, enhancing productivity and reducing time-to-market",
+    ],
+  },
+  {
+    role: "IT Analyst",
+    organisation: "Tata Consultancy Services",
+    startDate: "Mar, 2022",
+    endDate: "NOV, 2024  (Helsinki, Finland)",
+    experiences: [
+      "Developed a responsive Issuer access web application using React and served by thousands of Issuer agents on a daily basis.",
+      "Built RESTful APIs and integrated with front-end applications for Issuer access web using Spring boot.",
+      "Worked closely with Clients to identify new business requirements and developed UI and also fixed other API bugs to improve the overall stability, user experience and resolve business-related queries.",
+      "Adept at automating cloud infrastructure deployment through Infrastructure as Code via AWS Cloud Formation",
+    ],
+  },
 
-export const myCertifications=[
   {
-  title: "AWS Certified Developer Associate ",
-  desc:"JUL 2024",
-  //I'm a frontend developer with experience in building responsiveand optimized sites
-  //
-  icon:FaAws,
-  link:"https://www.credly.com/badges/75e8aa08-8801-48ff-845e-84ca84f16868"
+    role: "Full Stack Developer",
+    organisation: "Tata Consultancy Services",
+    startDate: "May, 2019",
+    endDate: "Mar, 2022 (Chennai, India)",
+    experiences: [
+      "Developed Digital Market portal API using Java Spring boot and later developed UI with React, Java script and participated in microservices architecture.",
+      "In Clearing House implementation, developed and deployed scalable, fault-tolerant microservices using Spring Boot and AWS environment also worked in Complex vendor queries, state management and state based UI control.",
+      "Applied Agile methodologies to improve project efficiency and collaboration.",
+      "Collaborate with cross-functional teams with UX/UI designers to create intuitive, develop, and implement software solutions.",
+      "Troubleshooting and debugging applications, resolving bugs and performance issues to enhance overall system stability and user experience",
+    ],
+  },
+];
+
+export const myCertifications = [
+  {
+    title: "AWS Certified Developer Associate ",
+    desc: "JUL 2024",
+    //I'm a frontend developer with experience in building responsiveand optimized sites
+    //
+    icon: FaAws,
+    link: "https://www.credly.com/badges/75e8aa08-8801-48ff-845e-84ca84f16868",
   },
   {
-      title: "AWS Certified Solutions Architect Associate",
-      desc:"APR 2024",
-     //I have experience developing fast and optimised back-end systemsand APIs
-      icon:FaAws,
-  link:"https://www.credly.com/badges/57e088bf-031f-48d3-a13a-343553525bf1"
+    title: "AWS Certified Solutions Architect Associate",
+    desc: "APR 2024",
+    //I have experience developing fast and optimised back-end systemsand APIs
+    icon: FaAws,
+    link: "https://www.credly.com/badges/57e088bf-031f-48d3-a13a-343553525bf1",
   },
   {
-      title: "AWS Certified Cloud Practitioner",
-      desc:"MAR 2024",   
-      icon:FaAws,
-  link:"https://www.credly.com/badges/6cf9f70f-825d-4eae-ba56-31bf6bd0f23b"
+    title: "AWS Certified Cloud Practitioner",
+    desc: "MAR 2024",
+    icon: FaAws,
+    link: "https://www.credly.com/badges/6cf9f70f-825d-4eae-ba56-31bf6bd0f23b",
   },
   {
     title: "Microsoft Certified: Azure AI Fundamentals",
-    desc:"NOV 2022",
-    icon:TfiMicrosoftAlt,
-  link:"https://www.credly.com/badges/86504466-c9b2-4299-9670-1b35eb54178e"
-},
-{
-  title: "Microsoft Certified: Azure Stack Hub Operator Associate",
-  desc:"OCT 2022",
-  icon:TfiMicrosoftAlt,
-  link:"https://www.credly.com/badges/12303393-da05-4441-9289-05daac0b2c9a"
-},
-{
-  title: "Microsoft Certified: Azure Fundamentals",
-  desc:"JUL 2021",
-  icon:TfiMicrosoftAlt,
-  link:"https://www.credly.com/badges/1123cdbd-a23e-41fd-acb1-7411dfe01c7d"
-},
-
+    desc: "NOV 2022",
+    icon: TfiMicrosoftAlt,
+    link: "https://www.credly.com/badges/86504466-c9b2-4299-9670-1b35eb54178e",
+  },
+  {
+    title: "Microsoft Certified: Azure Stack Hub Operator Associate",
+    desc: "OCT 2022",
+    icon: TfiMicrosoftAlt,
+    link: "https://www.credly.com/badges/12303393-da05-4441-9289-05daac0b2c9a",
+  },
+  {
+    title: "Microsoft Certified: Azure Fundamentals",
+    desc: "JUL 2021",
+    icon: TfiMicrosoftAlt,
+    link: "https://www.credly.com/badges/1123cdbd-a23e-41fd-acb1-7411dfe01c7d",
+  },
 ];
 
 export const contact = [
   {
-    title:"Emailid",
-    link:"mailto:muruvazhakan@email.com",
-    text:"Mail Id",
-    icon:HiMail,
-    size:40
+    title: "Emailid",
+    link: "mailto:muruvazhakan@email.com",
+    text: "Mail Id",
+    icon: HiMail,
+    size: 40,
   },
   {
-    title:"linkedin",
-    link:"https://www.linkedin.com/in/muruvazhakanp",
-    text:"Linkedin",
-    icon:FaLinkedin,
-    size:40
+    title: "linkedin",
+    link: "https://www.linkedin.com/in/muruvazhakanp",
+    text: "Linkedin",
+    icon: FaLinkedin,
+    size: 40,
   },
   {
-    title:"Github",
-    link:"https://github.com/Muruvazhakan",
-    text:"Github",
-    icon:RxGithubLogo,
-    size:40
+    title: "Github",
+    link: "https://github.com/Muruvazhakan",
+    text: "Github",
+    icon: RxGithubLogo,
+    size: 40,
   },
   // {
   //   title:"Mobile",
@@ -301,6 +321,7 @@ export const contact = [
 ];
 
 export const contactme = {
-  title:"Connect with Me",
-  headline:"Our journey starts with a conversation -- react out and let's begin."
-}
+  title: "Connect with Me",
+  headline:
+    "Our journey starts with a conversation -- react out and let's begin.",
+};
